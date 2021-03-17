@@ -56,13 +56,14 @@ like
 df2.to_sql('Customer', conn, if_exists='replace', index = False)
 
 countries = df2['Country']
+#extracting countries
 
 Query1 = " CREATE TABLE IF NOT EXISTS table_"
 Query2 = " AS select * from Customer where country = "
 
 for each in countries:
 	query = Query1 + each + Query2 +'"'+ each +'" '+ ""
-	print(query)
+	# creating table for each country with respective data
 	c.execute(query)
 	conn.commit()
 	
