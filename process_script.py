@@ -26,7 +26,8 @@ Customer_ID VARCHAR(18), Customer_Open_Date DATE,
 		Doctor_Consulted VARCHAR(255),
 		State VARCHAR(5),
 		Country VARCHAR(5),
-		Post_Code INT Date_of_Birth DATE,
+		Post_Code INT,
+		Date_of_Birth DATE,
 		Active_Customer CHAR
  )
 ''')
