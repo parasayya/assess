@@ -1,0 +1,22 @@
+sql queries :
+
+
+create table Customer(Name VARCHAR(255), 
+Customer_ID VARCHAR(18), Customer_Open_Date DATE,
+		Last_Consulted_Date DATE,
+		Vaccination_type varchar(5),
+		Doctor_Consulted VARCHAR(255),
+		State VARCHAR(5),
+		Country VARCHAR(5),
+		Post Code INT Date_of_Birth DATE,
+		Active_Customer CHAR
+ )
+
+
+
+1. insert into table_india (select * from customer where country ='IND')
+2. SELECT * into table_india form (select * from customer where country ='IND')
+
+
+
+
